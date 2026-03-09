@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1500"
+   height="1000"
+   viewBox="0 0 396.875 264.58333"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Rastergrafik.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="SHopPilot.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="753.06872"
+     inkscape:cy="432.04224"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="276.75416,173.0375"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="41.804166,168.01042"
+       orientation="1,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.141666,214.04792"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="205.04918,278.42789"
+       orientation="1,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="308.23958,209.55"
+       orientation="1,0"
+       id="guide5"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.353557;stroke-dasharray:none"
+       id="rect2"
+       width="15.11444"
+       height="8.0043526"
+       x="169.13327"
+       y="135.03545" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#2c241d;stroke-width:6.64738;stroke-dasharray:none;stroke-opacity:1"
+       id="Rand"
+       width="389.73923"
+       height="259.15802"
+       x="3.8232675"
+       y="3.566282"
+       inkscape:label="Backware" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_9"
+       cx="41.895164"
+       cy="50.904175"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_10"
+       cx="41.895164"
+       cy="133.98322"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_2_Mitte_Eingang"
+       cx="308.33047"
+       cy="140.59793"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_4_Kuehlprodukte"
+       cx="308.33017"
+       cy="50.375008"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_6"
+       cx="204.91737"
+       cy="50.653301"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_8_Fleisch_Fischprodukte"
+       cx="99.522621"
+       cy="50.653313"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_5"
+       cx="205.28699"
+       cy="91.782394"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:9.49606;stroke-dasharray:none;stroke-opacity:1"
+       id="Fleischtheke"
+       width="55.764729"
+       height="36.940369"
+       x="67.382446"
+       y="72.954819" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="76.906967"
+       y="93.461418"
+       id="text5-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan8">Fleischtheke</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00-8"
+       width="102.45093"
+       height="14.354136"
+       x="79.157806"
+       y="157.88824" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="121.01879"
+       y="167.10638"
+       id="text5-7-9-60-5"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         x="121.01879"
+         y="167.10638">Gemüse</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00-4"
+       width="102.45093"
+       height="14.354136"
+       x="79.101562"
+       y="128.45909" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.85523;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-0"
+       width="68.212486"
+       height="15.738152"
+       x="5.5948381"
+       y="-260.44562"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.85523;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-0-0-6"
+       width="68.212486"
+       height="15.738152"
+       x="5.8584599"
+       y="-372.06274"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.51911;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-12"
+       width="145.95946"
+       height="8.8486633"
+       x="113.67863"
+       y="-214.04977"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.49981;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-12-1"
+       width="145.21111"
+       height="8.8486633"
+       x="57.25132"
+       y="-15.11724"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.97945;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-1"
+       width="146.20265"
+       height="7.6113181"
+       x="113.65626"
+       y="-204.86224"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
+       id="Eingang"
+       width="34.2075"
+       height="14.354136"
+       x="288.17145"
+       y="251.73586" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7"
+       width="31.199333"
+       height="15.738152"
+       x="228.48517"
+       y="-63.457809"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-268.22498"
+       y="53.733276"
+       id="text6-7-5"
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan13-4"
+         x="-268.22498"
+         y="53.733276"
+         style="stroke-width:7.73826">KASSA</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7-7"
+       width="31.199333"
+       height="15.738152"
+       x="228.85692"
+       y="-112.71707"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-268.14978"
+       y="101.77919"
+       id="text6-7-0"
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan13-1"
+         x="-268.14978"
+         y="101.77919"
+         style="stroke-width:7.73826">KASSA</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7-9"
+       width="31.199333"
+       height="15.738152"
+       x="228.54596"
+       y="-159.0598"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:9.71986;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5"
+       width="150.355"
+       height="14.354136"
+       x="25.892647"
+       y="6.3666797" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="85.235474"
+       y="15.025286"
+       id="text5-7"><tspan
+         sodipodi:role="line"
+         id="tspan7">Fischbereich</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00"
+       width="102.45093"
+       height="14.354136"
+       x="79.464928"
+       y="187.71094" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7"
+       width="59.317749"
+       height="14.354136"
+       x="229.23167"
+       y="118.30564" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2"
+       width="59.317749"
+       height="14.354136"
+       x="229.11281"
+       y="148.65192" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="A2"
+       width="59.317749"
+       height="14.354136"
+       x="228.6113"
+       y="194.55156" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="231.87758"
+       y="204.5954"
+       id="text5-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         x="231.87758"
+         y="204.5954">Konserve &amp; Fertig</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="A1"
+       width="59.317749"
+       height="14.354136"
+       x="228.92149"
+       y="225.23163" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="243.08852"
+       y="234.86743"
+       id="text5-6"><tspan
+         sodipodi:role="line"
+         id="tspan14">Pasta &amp; Reis</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-9"
+       width="59.317749"
+       height="14.354136"
+       x="324.50845"
+       y="117.81931" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2-2"
+       width="59.317749"
+       height="14.354136"
+       x="324.38959"
+       y="148.1656" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="B2"
+       width="59.317749"
+       height="14.354136"
+       x="324.62732"
+       y="194.06522" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="345.38251"
+       y="203.74841"
+       id="text5-6-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         x="345.38251"
+         y="203.74841">Müsli</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="B1"
+       width="59.317749"
+       height="14.354136"
+       x="324.93753"
+       y="224.74529" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="279.41592"
+       y="273.01077"
+       id="text6"
+       transform="scale(1.0471004,0.95501822)"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:7.73826;stroke-dasharray:none"
+         x="279.41592"
+         y="273.01077">Eingang</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-267.46335"
+       y="146.86882"
+       id="text6-7"
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         x="-267.46335"
+         y="146.86882"
+         style="stroke-width:7.73826">KASSA</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_3_Kreuzung"
+       cx="308.2355"
+       cy="91.601067"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_1_Eingang"
+       cx="308.33044"
+       cy="217.5905"
+       rx="4.0599999"
+       ry="4.0729275" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="339.60349"
+       y="233.60953"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:5.8;fill:#ffffff;fill-opacity:1"
+         x="339.60349"
+         y="233.60953">Teigwaren</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-148.96318"
+       y="12.677577"
+       id="text5-7-9-6"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="-148.96318"
+         y="12.677577">Backwaren</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="125.48849"
+       y="137.65468"
+       id="text5-7-9-60"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="125.48849"
+         y="137.65468">Obst</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="123.46423"
+       y="197.46927"
+       id="text5-7-9-60-6"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="123.46423"
+         y="197.46927">Saucen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-64.059303"
+       y="254.76682"
+       id="text5-7-9-60-5-3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         x="-64.059303"
+         y="254.76682">Tiefkühlprodukte</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-57.371201"
+       y="366.18323"
+       id="text5-7-9-60-5-3-5"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         x="-57.371201"
+         y="366.18323">Kaltgetränke</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="238.83189"
+       y="127.64602"
+       id="text5-6-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         x="238.83189"
+         y="127.64602">Tiernahrung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="245.78267"
+       y="157.91806"
+       id="text5-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         x="245.78267"
+         y="157.91806">Snacks</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="340.1655"
+       y="126.79903"
+       id="text5-6-9-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="340.1655"
+         y="126.79903">Spielzeuge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="337.80734"
+       y="156.28598"
+       id="text5-4"><tspan
+         sodipodi:role="line"
+         id="tspan21"
+         x="337.80734"
+         y="156.28598">Süßigkeiten</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_11_Ende"
+       cx="41.657173"
+       cy="193.79018"
+       rx="4.0597482"
+       ry="4.0729275" />
+  </g>
+</svg>
