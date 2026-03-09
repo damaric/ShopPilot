@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototyp - Navigierungssystem</title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+    <style>
+
+      body {
+         margin: 0; 
+         height: 100vh;
+         background: linear-gradient(135deg, #f5f0e8 0%, #f5f0e8 20%,  #bfbcb7 40%,  #a7a7a7 60%,  #ffffff 80%,  #ffffff 100%);
+      }
+
+      .container-produkt {
+         margin: 15px;
+         display: flex;
+         justify-content: center;
+         align-items: center;  
+         flex-direction: column;       
+      }
+
+      #input-produkt {
+         font-size: 25px; 
+         border-radius: 15px;
+         outline: none;
+         border: none;
+         padding: 10px;
+         gap: 15px;
+      }
+
+      .container-suchen {
+         display: flex;
+         justify-content: center;
+         align-items: center;     
+      }
+
+      #button-suchen {
+         font-size: 20px;
+         border-radius: 15px;
+         outline: none;
+         border: none;
+         padding: 10px;
+         cursor: pointer;
+         font-weight: bold;
+      }
+
+      #button-suchen:hover {
+         background-color: rgb(190, 190, 190);
+      }
+
+
+      .container-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         flex-wrap: wrap;
+      }
+
+      #skizze {
+         display: block; /* inline - element kann man nicht verschieben (skizze), block element kann man verschieben */
+         margin: 40px auto;
+         max-width: 900px;
+         width: 100%;
+         height: auto;
+      }
+
+      @media (max-width: 768px) {      /* wird an jedes Handy angepasst (Button u. Suchleiste) */
+         #input-produkt {
+            font-size: 18px;
+            width: 70%;
+         }
+
+         #button-suchen {
+            font-size: 16px;
+            padding: 8px;
+         }
+      }
+
+      svg {
+         width: 100%;
+         height: auto;
+      }
+
+      .highlight {
+         fill: red !important;
+        
+      }
+
+
+    
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+   <div class="container-main">
+
+      <div class="container-produkt">
+         <input id="input-produkt" placeholder="Produkt eingeben:" type="text">
+      </div>
+      <div class="container-suchen">
+         <button type="submit" id="button-suchen" onclick="showLine()">Suchen!</button>  
+      </div>
+
+    </div>
+
+
+
+   <svg id="skizze" width="1000" height="1000"
+   width="1122.5197"
+   height="793.70081"
+   viewBox="0 0 296.99999 210"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Rastergrafik.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="SHopPilot.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.91049024"
+     inkscape:cx="669.41959"
+     inkscape:cy="517.85289"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264999;stroke-dasharray:none"
+       id="rect2"
+       width="10.819036"
+       height="6.282021"
+       x="122.84841"
+       y="107.14336" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#2c241d;stroke-width:5.10609;stroke-dasharray:none;stroke-opacity:1"
+       id="Rand"
+       width="291.26801"
+       height="204.60765"
+       x="3.0526223"
+       y="2.7956369"
+       inkscape:label="Backware" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.11751;stroke-dasharray:none;stroke-opacity:1"
+       id="Fleischtheke"
+       width="39.916832"
+       height="28.991749"
+       x="50.01437"
+       y="52.070889" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
+       x="50.271183"
+       y="67.654663"
+       id="text6-7-01"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         x="50.271183"
+         y="67.654663">Fleischtheke</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00-8"
+       width="73.335182"
+       height="11.265493"
+       x="58.443264"
+       y="125.07882" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00-4"
+       width="73.335182"
+       height="11.265493"
+       x="58.403004"
+       y="101.98206" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-0"
+       width="53.534904"
+       height="11.265493"
+       x="5.5550561"
+       y="-188.21051"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-0-0"
+       width="53.534904"
+       height="11.265493"
+       x="5.409955"
+       y="-228.2319"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-0-0-6"
+       width="53.534904"
+       height="11.265493"
+       x="5.7619534"
+       y="-268.10693"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.62128;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-12"
+       width="113.96539"
+       height="6.3339434"
+       x="90.969307"
+       y="-155"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.62128;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-12-1"
+       width="113.96539"
+       height="6.3339434"
+       x="46.096386"
+       y="-12.60252"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.23126;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-1"
+       width="114.74358"
+       height="5.4482417"
+       x="90.364426"
+       y="-148.42349"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       id="Eingang"
+       width="24.486"
+       height="11.265493"
+       x="208.05687"
+       y="198.73283" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7"
+       width="24.486036"
+       height="11.265493"
+       x="180.48509"
+       y="-47.205082"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
+       x="-202.20482"
+       y="42.055794"
+       id="text6-7-5"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan13-4"
+         x="-202.20482"
+         y="42.055794">KASSA</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7-7"
+       width="24.486036"
+       height="11.265493"
+       x="180.77686"
+       y="-82.465248"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
+       x="-202.14845"
+       y="78.067299"
+       id="text6-7-0"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan13-1"
+         x="-202.14845"
+         y="78.067299">KASSA</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-5-7-9"
+       width="24.486036"
+       height="11.265493"
+       x="180.53281"
+       y="-115.63774"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.28526;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5"
+       width="107.62532"
+       height="11.265493"
+       x="20.315641"
+       y="6.1608171" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00"
+       width="73.335182"
+       height="11.265493"
+       x="58.663105"
+       y="148.48444" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7"
+       width="42.460114"
+       height="11.265493"
+       x="165.86732"
+       y="94.013382" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2"
+       width="42.460114"
+       height="11.265493"
+       x="165.78224"
+       y="117.82992" />
+    <path
+       d="m 185.84237,122.37075 -1.3777,3.54139 h 0.44959 l 0.41961,-1.09141 h 1.39785 l 0.42478,1.09141 h 0.45888 l -1.37304,-3.54139 z m 3.17086,0.015 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0659,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19949 -0.005,0.34107 v 2.46445 h 0.42478 v -3.5264 z m -2.97811,0.44442 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.17259 0.023,0.0724 0.0457,0.14325 0.0687,0.21239 0.0231,0.0692 0.0397,0.11733 0.0496,0.14367 l 0.39532,1.0666 h -1.11621 l 0.39998,-1.0666 c 0.0198,-0.056 0.0443,-0.13189 0.0739,-0.22738 0.0296,-0.0988 0.056,-0.1992 0.0791,-0.30127 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path13-5" />
+    <path
+       d="m 188.92848,99.218686 c -0.2239,0 -0.4261,0.0412 -0.6072,0.1235 -0.1778,0.079 -0.3361,0.176217 -0.47438,0.291457 l 0.23202,0.29145 c 0.135,-0.10536 0.26691,-0.18774 0.39533,-0.24701 0.1317,-0.0593 0.28301,-0.0889 0.45423,-0.0889 0.18438,0 0.33434,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.439767 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15464,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29659 -0.44958,0.47439 l -0.92346,0.93327 v 0.36071 h 2.33113 v -0.39533 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33888,-0.34393 0.47387,-0.49868 0.135,-0.15804 0.24054,-0.3177 0.31626,-0.47904 0.0757,-0.16133 0.11369,-0.33444 0.11369,-0.51883 0,-0.293037 -0.0958,-0.521627 -0.2868,-0.686257 -0.19097,-0.167917 -0.45106,-0.252177 -0.78032,-0.252177 z m -3.13572,0.0346 -1.37821,3.541384 h 0.44958 l 0.41961,-1.09193 h 1.39785 l 0.42478,1.09193 h 0.45941 l -1.37305,-3.541384 z m 0.19223,0.459397 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.1726 0.023,0.0724 0.0462,0.143247 0.0693,0.212387 0.0231,0.0692 0.0392,0.11681 0.0491,0.14315 l 0.39533,1.06711 h -1.11621 l 0.39997,-1.06711 c 0.0197,-0.056 0.0442,-0.13138 0.0739,-0.22686 0.0296,-0.0988 0.056,-0.199207 0.0791,-0.301277 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path12-4" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="A2"
+       width="42.460114"
+       height="11.265493"
+       x="165.42325"
+       y="153.85313" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="A1"
+       width="42.460114"
+       height="11.265493"
+       x="165.64529"
+       y="177.93164" />
+    <path
+       d="m 185.31324,181.0737 -1.3777,3.54139 h 0.44959 l 0.41961,-1.09141 h 1.39785 l 0.42478,1.09141 h 0.45888 l -1.37304,-3.54139 z m 3.17086,0.015 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0659,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19949 -0.005,0.34107 v 2.46445 h 0.42478 v -3.5264 z m -2.97811,0.44442 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.17259 0.023,0.0724 0.0457,0.14325 0.0687,0.21239 0.0231,0.0692 0.0397,0.11733 0.0496,0.14367 l 0.39532,1.0666 h -1.11621 l 0.39998,-1.0666 c 0.0198,-0.056 0.0443,-0.13189 0.0739,-0.22738 0.0296,-0.0988 0.056,-0.1992 0.0791,-0.30127 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path13" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-9"
+       width="42.460114"
+       height="11.265493"
+       x="234.0672"
+       y="93.631691" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2-2"
+       width="42.460114"
+       height="11.265493"
+       x="233.98212"
+       y="117.44825" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="B2"
+       width="42.460114"
+       height="11.265493"
+       x="234.15228"
+       y="153.47144" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
+       id="B1"
+       width="42.460114"
+       height="11.265493"
+       x="234.37433"
+       y="177.54994" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
+       x="211.21008"
+       y="205.79187"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:5.8;stroke-dasharray:none"
+         x="211.21008"
+         y="205.79187">Eingang</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
+       x="-201.63394"
+       y="111.86301"
+       id="text6-7"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         x="-201.63394"
+         y="111.86301">KASSA</tspan></text>
+    <path
+       d="m 188.39935,157.92163 c -0.2239,0 -0.4261,0.0412 -0.6072,0.1235 -0.1778,0.079 -0.3361,0.17622 -0.47438,0.29146 l 0.23202,0.29145 c 0.135,-0.10536 0.26691,-0.18774 0.39533,-0.24701 0.1317,-0.0593 0.28301,-0.0889 0.45423,-0.0889 0.18438,0 0.33434,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.43977 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15464,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29659 -0.44958,0.47439 l -0.92346,0.93327 v 0.36071 h 2.33113 v -0.39533 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33888,-0.34393 0.47387,-0.49868 0.135,-0.15804 0.24054,-0.3177 0.31626,-0.47904 0.0757,-0.16133 0.11369,-0.33444 0.11369,-0.51883 0,-0.29304 -0.0958,-0.52163 -0.2868,-0.68626 -0.19097,-0.16792 -0.45106,-0.25218 -0.78032,-0.25218 z m -3.13572,0.0346 -1.37821,3.54139 h 0.44958 l 0.41961,-1.09193 h 1.39785 l 0.42478,1.09193 h 0.45941 l -1.37305,-3.54139 z m 0.19223,0.4594 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.1726 0.023,0.0724 0.0462,0.14325 0.0693,0.21239 0.0231,0.0692 0.0392,0.11681 0.0491,0.14315 l 0.39533,1.06711 h -1.11621 l 0.39997,-1.06711 c 0.0197,-0.056 0.0442,-0.13138 0.0739,-0.22686 0.0296,-0.0988 0.056,-0.19921 0.0791,-0.30128 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path12" />
+    <path
+       d="m 253.47083,180.85873 v 3.5264 h 1.23972 c 0.37865,0 0.67669,-0.0875 0.894,-0.262 0.22061,-0.17451 0.33073,-0.42166 0.33073,-0.74104 0,-0.18438 -0.0347,-0.33382 -0.10387,-0.44907 -0.0691,-0.11527 -0.16446,-0.20412 -0.28628,-0.26665 -0.11854,-0.0625 -0.25181,-0.10561 -0.39998,-0.12867 v -0.0248 c 0.21731,-0.0395 0.38344,-0.12649 0.49868,-0.26148 0.11524,-0.1383 0.17311,-0.3114 0.17311,-0.51883 0,-0.32268 -0.11387,-0.54804 -0.34106,-0.67645 -0.22389,-0.1317 -0.55614,-0.1974 -0.99736,-0.1974 z m 4.12378,0 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0658,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19897 -0.005,0.34055 v 2.46497 h 0.42478 v -3.5264 z m -3.67936,0.38034 h 0.58291 c 0.29963,0 0.51665,0.0426 0.65164,0.12815 0.13829,0.0823 0.20774,0.22071 0.20774,0.41497 0,0.19097 -0.056,0.33581 -0.16795,0.43459 -0.11195,0.0955 -0.31926,0.14315 -0.62218,0.14315 h -0.65216 z m 0,1.49138 h 0.67645 c 0.32596,0 0.55184,0.0574 0.67696,0.1726 0.1284,0.11194 0.19223,0.26055 0.19223,0.44493 0,0.19756 -0.0606,0.35722 -0.18242,0.47904 -0.12182,0.12183 -0.33935,0.18242 -0.65215,0.18242 h -0.71107 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path11" />
+    <path
+       d="m 257.50986,157.69167 c -0.22389,0 -0.4261,0.0412 -0.60719,0.1235 -0.1778,0.079 -0.3361,0.17621 -0.47439,0.29146 l 0.23254,0.29145 c 0.135,-0.10536 0.2664,-0.18774 0.39481,-0.24701 0.1317,-0.0593 0.28302,-0.0889 0.45423,-0.0889 0.18439,0 0.33435,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.43977 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15465,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29607 -0.44958,0.47387 l -0.92346,0.93379 v 0.36019 h 2.33113 v -0.39481 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33887,-0.34444 0.47387,-0.49919 0.135,-0.15804 0.24053,-0.3177 0.31626,-0.47904 0.0757,-0.16134 0.11369,-0.33393 0.11369,-0.51832 0,-0.29304 -0.0958,-0.52215 -0.2868,-0.68678 -0.19098,-0.16792 -0.45106,-0.25166 -0.78032,-0.25166 z m -4.08915,0.0496 v 3.52588 h 1.23971 c 0.37866,0 0.6767,-0.087 0.89401,-0.26148 0.2206,-0.17451 0.33073,-0.42166 0.33073,-0.74104 0,-0.18439 -0.0347,-0.33383 -0.10387,-0.44907 -0.0691,-0.11527 -0.16446,-0.20412 -0.28629,-0.26665 -0.11853,-0.0625 -0.25181,-0.10561 -0.39998,-0.12868 v -0.0248 c 0.21731,-0.0395 0.38344,-0.12648 0.49868,-0.26148 0.11525,-0.13829 0.17312,-0.3114 0.17312,-0.51884 0,-0.32267 -0.11387,-0.54803 -0.34107,-0.67644 -0.22389,-0.1317 -0.55615,-0.1974 -0.99735,-0.1974 z m 0.44441,0.37982 h 0.58291 c 0.29963,0 0.51716,0.0431 0.65216,0.12867 0.13829,0.0823 0.20722,0.2207 0.20722,0.41496 0,0.19098 -0.056,0.33583 -0.16794,0.4346 -0.11196,0.0955 -0.31928,0.14315 -0.62219,0.14315 h -0.65216 z m 0,1.4919 h 0.67697 c 0.32596,0 0.55132,0.0574 0.67644,0.1726 0.12841,0.11194 0.19275,0.26003 0.19275,0.44441 0,0.19756 -0.0611,0.35722 -0.18293,0.47904 -0.12183,0.12183 -0.33936,0.18294 -0.65216,0.18294 h -0.71107 z"
+       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
+       id="path10" />
+  </g>
+</svg>
+
+
+ 
+
+
+
+
+   <script>
+
+      let routeToggle = 0;
+
+         function showLine() {
+
+            // Das SVG - Layer holen, auf dem die Linien gezeichnet werden
+            const layer = document.getElementById("layer1");
+
+            // Alle alten Linien mit der Klasse ".route-line" löschen damit nicht mehrere Routen übereinander kommen
+            layer.querySelectorAll(".route-line").forEach(line => line.remove());
+
+            // SVG - Element "Eingang" holen
+            const eingang = document.getElementById("Eingang");
+
+            // X und Y Position der Mitte vom Eingang berechnen
+            const startX = parseFloat(eingang.getAttribute("x")) + parseFloat(eingang.getAttribute("width")) / 2;
+            const startY = parseFloat(eingang.getAttribute("y")) + parseFloat(eingang.getAttribute("height")) / 2;
+
+            // SVG - Element "Fleischtheke" holen
+            const fleischtheke = document.getElementById("Fleischtheke");
+
+            // X und Y Position der Mitte von der Fleischtheke berechnen
+            const zielX = parseFloat(fleischtheke.getAttribute("x")) + parseFloat(fleischtheke.getAttribute("width")) / 2;
+            const zielY = parseFloat(fleischtheke.getAttribute("y")) + parseFloat(fleischtheke.getAttribute("height")) / 2;
+
+            // SVG - ELement "Oberes Regal links" holen
+            const obenLinks = document.getElementById("rect5");
+
+            // X und Y Posistion von Regal berechnen
+            const zielX2 = parseFloat(obenLinks.getAttribute("x")) + parseFloat(obenLinks.getAttribute("width")) / 2;
+            const zielY2 = parseFloat(obenLinks.getAttribute("y")) + parseFloat(obenLinks.getAttribute("height")) / 2;
+
+            // Zwischenpunkt (Mitte)
+            const mitteX = 220;
+            const mitteY = 80;
+
+            // 1. SVG - Linie erstellen
+            const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+            // Klasse hinzufügen (damit später löschbar)
+            line1.setAttribute("class", "route-line");
+
+            line1.setAttribute("x1", startX);      // Startpunkt X = Mitte vom Eingang
+            line1.setAttribute("y1", startY)       // Startpunkt Y = Mitte vom Eingang
+
+            line1.setAttribute("x2", 220);         // Endpunkt X = fester Zwischenpunkt
+            line1.setAttribute("y2", 80);          // Endpunkt Y = fester Zwischenpunkt
+
+            line1.setAttribute("stroke", "#8BBFE6");      // Linie grün färben
+            line1.setAttribute("stroke-width", "1.5");  // Dicke der Linie festlegen
+
+            layer.appendChild(line1);     
+            
+            
+
+            if (routeToggle === 0) {
+                     
+                     // 2. SVG - Linie erstellen
+                     const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                     // Klasse hinzufügen
+                     line2.setAttribute("class", "route-line");
+
+                     line2.setAttribute("x1", 220); // Startpunkt X = Zwischenpunkt
+                     line2.setAttribute("y1", 80);  // Startpunkt Y = Zwischenpunkt
+
+                     line2.setAttribute("x2", zielX) // Endpunkt X = Fleischtheke
+                     line2.setAttribute("y2", zielY) // Endpunkt Y = Fleischtheke
+
+                     line2.setAttribute("stroke", "#8BBFE6");  // Linie grün färben
+                     line2.setAttribute("stroke-width", "1.5")   // Dicke der Linie
+                     layer.appendChild(line2);
+
+                     routeToggle = 1;
+
+            } else {
+                     // 3. Linie  (Eingang bis Mitte)
+                     const line3 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                     line3.setAttribute("class", "route-line");
+
+                     line3.setAttribute("x1", mitteX);   // Startpunkt X = Mitte
+                     line3.setAttribute("y1", mitteY);    // Startpunkt Y = Mitte
+
+                     line3.setAttribute("x2", zielX2);      // Endpunkt X = Oben Links
+                     line3.setAttribute("y2", zielY2);       // Endpunkt Y = Oben Links
+
+                     line3.setAttribute("stroke", "#8BBFE6");
+                     line3.setAttribute("stroke-width", "1.5");
+  
+                     layer.appendChild(line3);     // Dritte Linie in SVG einfügen
+
+                     routeToggle = 0;
+            }
+
+            if (routeToggle === 0) {
+                  // 4. Linie (Mitte bis oben rechts)
+                  const line4 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line4.setAttribute("class", "route-line");
+
+                  line4.setAttribute("x1", mitteX); // Startpunkt Mitte
+                  line4.setAttribute("y1", mitteY); // Startpunkt Mitte
+
+                  line4.setAttribute("x2", 385);  // Endpunkt
+                  line4.setAttribute("y2", 5);  // Endpunkt
+
+                  line4.setAttribute("stroke", "#8BBFE6");
+                  line4.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line4);
+
+                  routeToggle = 1;
+            } else {
+
+            }
+            
+         } 
+
+      const btn = document.getElementById("button-suchen");
+      const rect = document.getElementById("A2");
+
+      btn.addEventListener('click', function() {
+         rect.classList.toggle('highlight');
+      });
+
+   </script>
+
+    
+</body>
+</html>
