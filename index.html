@@ -88,12 +88,13 @@
       }
 
       .highlight {
-         fill: red !important;
-        
+         fill: rgb(40, 40, 40) !important;   
       }
 
-
-    
+      .highlight-red {
+         fill: red !important;
+      }
+ 
     </style>
 
 </head>
@@ -102,6 +103,17 @@
 
 
 <body>
+
+   
+      <div id="myPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 1000; border: 3px solid #8BBFE6;">
+         <h3>SONDERANGEBOT IM ROT MARKIERTEN REGAL!</h3>
+         <p>50% Rabatt - NUR HEUTE!</p>
+         <p>Zuschlagen bevor es weg ist.</p>
+         <button onclick="closePopup()" style="background: #8BBFE6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">OK</button>
+      </div>
+      <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"></div>
+
+
 
    <div class="container-main">
 
@@ -113,7 +125,6 @@
       </div>
 
     </div>
-
 
 
    <svg id="skizze" width="1000" height="1000"
@@ -423,22 +434,29 @@
 </svg>
 
 
- 
-
-
-
-
    <script>
 
       let routeToggle = 0;
+      let letztesZielElement = null;
+
 
          function showLine() {
+            showPopup();
 
             // Das SVG - Layer holen, auf dem die Linien gezeichnet werden
             const layer = document.getElementById("layer1");
 
             // Alle alten Linien mit der Klasse ".route-line" löschen damit nicht mehrere Routen übereinander kommen
             layer.querySelectorAll(".route-line").forEach(line => line.remove());
+
+            if (letztesZielElement) {
+               letztesZielElement.classList.remove("highlight");
+            }
+
+            const obenRechts = document.getElementById("rect5-0-0-6");
+            const mittelRegal = document.getElementById("rect5-00-8");
+            const unteresRegal = document.getElementById("rect5-00");
+            const linkesRegal = document.getElementById("rect5-12-1");
 
             // SVG - Element "Eingang" holen
             const eingang = document.getElementById("Eingang");
@@ -460,6 +478,8 @@
             // X und Y Posistion von Regal berechnen
             const zielX2 = parseFloat(obenLinks.getAttribute("x")) + parseFloat(obenLinks.getAttribute("width")) / 2;
             const zielY2 = parseFloat(obenLinks.getAttribute("y")) + parseFloat(obenLinks.getAttribute("height")) / 2;
+
+            
 
             // Zwischenpunkt (Mitte)
             const mitteX = 220;
@@ -483,7 +503,7 @@
             layer.appendChild(line1);     
             
             
-
+            // Zustand 1 = Fleischtheke
             if (routeToggle === 0) {
                      
                      // 2. SVG - Linie erstellen
@@ -502,9 +522,12 @@
                      line2.setAttribute("stroke-width", "1.5")   // Dicke der Linie
                      layer.appendChild(line2);
 
+                     letztesZielElement = fleischtheke;
+
                      routeToggle = 1;
 
-            } else {
+            // Zustand 2 = Regal links oben
+            } else if (routeToggle === 1) {
                      // 3. Linie  (Eingang bis Mitte)
                      const line3 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
@@ -520,11 +543,14 @@
                      line3.setAttribute("stroke-width", "1.5");
   
                      layer.appendChild(line3);     // Dritte Linie in SVG einfügen
+                     
+                     letztesZielElement = obenLinks;
 
-                     routeToggle = 0;
+                     routeToggle = 2;
             }
 
-            if (routeToggle === 0) {
+            // Zustand 3 = Regal rechts oben
+            else if (routeToggle === 2) {
                   // 4. Linie (Mitte bis oben rechts)
                   const line4 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
@@ -533,27 +559,222 @@
                   line4.setAttribute("x1", mitteX); // Startpunkt Mitte
                   line4.setAttribute("y1", mitteY); // Startpunkt Mitte
 
-                  line4.setAttribute("x2", 385);  // Endpunkt
-                  line4.setAttribute("y2", 5);  // Endpunkt
+                  line4.setAttribute("x2", 262);  // Endpunkt = Oberes Regal rechts
+                  line4.setAttribute("y2", 39);  // Endpunkt = Oberes Regal rechts
 
                   line4.setAttribute("stroke", "#8BBFE6");
                   line4.setAttribute("stroke-width", "1.5");
 
                   layer.appendChild(line4);
 
-                  routeToggle = 1;
-            } else {
+                  letztesZielElement = obenRechts;
 
-            }
+                  routeToggle = 3;
+            }  
             
+            else if(routeToggle === 3) {
+                  // 5. Linie
+                  const line5 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line5.setAttribute("class", "route-line");
+
+                  line5.setAttribute("x1", mitteX);
+                  line5.setAttribute("y1", mitteY);
+
+                  line5.setAttribute("x2", 135);
+                  line5.setAttribute("y2", 83);
+
+                  line5.setAttribute("stroke", "#8BBFE6");
+                  line5.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line5);
+
+                  // 6. Linie
+                  const line6 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line6.setAttribute("class", "route-line");
+
+                  line6.setAttribute("x1", 135);
+                  line6.setAttribute("y1", 83);
+
+                  line6.setAttribute("x2", 137);
+                  line6.setAttribute("y2", 129);
+
+                  line6.setAttribute("stroke", "#8BBFE6");
+                  line6.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line6);
+
+                  // 7. Linie
+                  const line7 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line7.setAttribute("class", "route-line");
+
+                  line7.setAttribute("x1", 137);
+                  line7.setAttribute("y1", 129);
+
+                  line7.setAttribute("x2", 130);
+                  line7.setAttribute("y2", 130);
+
+                  line7.setAttribute("stroke", "#8BBFE6");
+                  line7.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line7); 
+
+                  
+                  letztesZielElement = mittelRegal;
+                  
+
+                  routeToggle = 4;
+            }
+
+            else if(routeToggle === 4) {
+
+
+                  // 8. Linie
+                  const line8 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line8.setAttribute("class", "route-line");
+
+                  line8.setAttribute("x1", mitteX);
+                  line8.setAttribute("y1", mitteY);
+
+                  line8.setAttribute("x2", 135);
+                  line8.setAttribute("y2", 83);
+
+                  line8.setAttribute("stroke", "#8BBFE6");
+                  line8.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line8);
+
+                  // 9. Linie
+                  const line9 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line9.setAttribute("class", "route-line");
+
+                  line9.setAttribute("x1", 135);
+                  line9.setAttribute("y1", 83);
+
+                  line9.setAttribute("x2", 136);
+                  line9.setAttribute("y2", 154);
+
+                  line9.setAttribute("stroke", "#8BBFE6");
+                  line9.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line9);
+
+                  // 10. Linie
+                  const line10 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line10.setAttribute("class", "route-line");
+
+                  line10.setAttribute("x1", 136);
+                  line10.setAttribute("y1", 154);
+
+                  line10.setAttribute("x2", 129);
+                  line10.setAttribute("y2", 153);
+
+                  line10.setAttribute("stroke", "#8BBFE6");
+                  line10.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line10);
+
+                  letztesZielElement = unteresRegal;
+
+                  routeToggle = 5;   
+            }
+
+            else if(routeToggle === 5) {
+
+                  // 11. Linie
+                  const line11 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line11.setAttribute("class", "route-line");
+
+                  line11.setAttribute("x1", mitteX);
+                  line11.setAttribute("y1", mitteY);
+
+                  line11.setAttribute("x2", 10);
+                  line11.setAttribute("y2", 95);
+
+                  line11.setAttribute("stroke", "#8BBFE6");
+                  line11.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line11);
+
+
+                  letztesZielElement = linkesRegal;
+
+                  routeToggle = 6;
+            }
+
+            else if(routeToggle === 6) {
+
+                  // 12. Linie
+                  const line12 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line12.setAttribute("class", "route-line");
+
+                  line12.setAttribute("x1", mitteX);
+                  line12.setAttribute("y1", mitteY);
+
+                  line12.setAttribute("x2", 262);
+                  line12.setAttribute("y2", 58);
+
+                  line12.setAttribute("stroke", "#8BBFE6");
+                  line12.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line12);
+
+                  letztesZielElement = obenRechts;
+
+                  routeToggle = 0;
+            }
+
+            if (letztesZielElement) {
+               letztesZielElement.classList.add("highlight");
+            }
          } 
 
-      const btn = document.getElementById("button-suchen");
-      const rect = document.getElementById("A2");
+
+      // Berechnet die exakten Koordinaten jedes Objektes im SVG --> Untersuchen --> Konsole
+      const svg = document.querySelector("svg");
+      svg.addEventListener("click", function(e) {
+      const pt = svg.createSVGPoint();
+      pt.x = e.clientX;
+      pt.y = e.clientY;
+      const svgPunkt = pt.matrixTransform(svg.getScreenCTM().inverse());
+      console.log("SVG X:", svgPunkt.x);
+      console.log("SVG Y:", svgPunkt.y);
+      });
+
+
+      // Regal einfärben
+      const btn = document.getElementById('button-suchen');
+      const box = document.getElementById('rect5-7');
 
       btn.addEventListener('click', function() {
-         rect.classList.toggle('highlight');
+         box.style.fill = 'red';
       });
+
+
+
+
+      function showPopup() {
+            document.getElementById('myPopup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+         }
+
+      function closePopup() {
+            document.getElementById('myPopup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+         }
+
+// Popup beim Klick schließen (klickt man außerhalb)
+document.getElementById('overlay').addEventListener('click', closePopup);
+
+
+      
 
    </script>
 
