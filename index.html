@@ -64,10 +64,10 @@
 
       #skizze {
          display: block; /* inline - element kann man nicht verschieben (skizze), block element kann man verschieben */
-         margin: 40px auto;
-         max-width: 900px;
-         width: 100%;
-         height: auto;
+         width: 95%;
+         max-width: 100%;
+         height: 60vh;
+         margin: 10px auto;
       }
 
       @media (max-width: 768px) {      /* wird an jedes Handy angepasst (Button u. Suchleiste) */
@@ -79,6 +79,12 @@
          #button-suchen {
             font-size: 16px;
             padding: 8px;
+         }
+
+         #skizze {
+            width: 100%;
+            height: 70vh;
+            margin: 5px auto;
          }
       }
 
@@ -93,6 +99,31 @@
 
       .highlight-red {
          fill: red !important;
+      }
+
+      #vorschläge {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         background: white;
+         border: 1px solid #ccc;
+         max-height: 120px;
+         overflow-y: auto;    /* scrollbar */
+      }
+
+      .vorschläge {
+         padding: 8px;
+         cursor: pointer;
+      }
+
+      .vorschläge:hover {
+         background-color: #eee;
+      }
+
+      .search-container {
+         position: relative;
+         width: 300px;
       }
  
     </style>
@@ -117,8 +148,11 @@
 
    <div class="container-main">
 
-      <div class="container-produkt">
+      <div class="container-produkt"> 
+         <div class="search-container"> 
          <input id="input-produkt" placeholder="Produkt eingeben:" type="text">
+         <div id="vorschläge"></div>
+         </div>
       </div>
       <div class="container-suchen">
          <button type="submit" id="button-suchen" onclick="showLine()">Suchen!</button>  
@@ -127,10 +161,12 @@
     </div>
 
 
-   <svg id="skizze" width="1000" height="1000"
-   width="1122.5197"
-   height="793.70081"
-   viewBox="0 0 296.99999 210"
+   
+
+<svg id="skizze" 
+   width="3000"
+   height="3000"
+   viewBox="0 0 396.875 264.58333"
    version="1.1"
    id="svg1"
    inkscape:export-filename="Rastergrafik.svg"
@@ -152,15 +188,42 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.91049024"
-     inkscape:cx="669.41959"
-     inkscape:cy="517.85289"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="753.06872"
+     inkscape:cy="432.04224"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="276.75416,173.0375"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="41.804166,168.01042"
+       orientation="1,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.141666,214.04792"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="205.04918,278.42789"
+       orientation="1,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="308.23958,209.55"
+       orientation="1,0"
+       id="guide5"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <defs
      id="defs1" />
   <g
@@ -168,270 +231,461 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264999;stroke-dasharray:none"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.353557;stroke-dasharray:none"
        id="rect2"
-       width="10.819036"
-       height="6.282021"
-       x="122.84841"
-       y="107.14336" />
+       width="15.11444"
+       height="8.0043526"
+       x="169.13327"
+       y="135.03545" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#2c241d;stroke-width:5.10609;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#2c241d;stroke-width:6.64738;stroke-dasharray:none;stroke-opacity:1"
        id="Rand"
-       width="291.26801"
-       height="204.60765"
-       x="3.0526223"
-       y="2.7956369"
+       width="389.73923"
+       height="259.15802"
+       x="3.8232675"
+       y="3.566282"
        inkscape:label="Backware" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_9"
+       cx="41.895164"
+       cy="50.904175"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_10"
+       cx="41.895164"
+       cy="133.98322"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_2_Mitte_Eingang"
+       cx="308.33047"
+       cy="140.59793"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_4_Kuehlprodukte"
+       cx="308.33017"
+       cy="50.375008"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_6"
+       cx="204.91737"
+       cy="50.653301"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_8_Fleisch_Fischprodukte"
+       cx="99.522621"
+       cy="50.653313"
+       rx="4.0597482"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_5"
+       cx="205.28699"
+       cy="91.782394"
+       rx="4.0596695"
+       ry="4.0729275" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.11751;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:9.49606;stroke-dasharray:none;stroke-opacity:1"
        id="Fleischtheke"
-       width="39.916832"
-       height="28.991749"
-       x="50.01437"
-       y="52.070889" />
+       width="55.764729"
+       height="36.940369"
+       x="67.382446"
+       y="72.954819" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
-       x="50.271183"
-       y="67.654663"
-       id="text6-7-01"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="76.906967"
+       y="93.461418"
+       id="text5-7-9"><tspan
          sodipodi:role="line"
-         id="tspan14"
-         x="50.271183"
-         y="67.654663">Fleischtheke</tspan></text>
+         id="tspan8">Fleischtheke</tspan></text>
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-00-8"
-       width="73.335182"
-       height="11.265493"
-       x="58.443264"
-       y="125.07882" />
+       width="102.45093"
+       height="14.354136"
+       x="79.157806"
+       y="157.88824" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="121.01879"
+       y="167.10638"
+       id="text5-7-9-60-5"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         x="121.01879"
+         y="167.10638">Gemüse</tspan></text>
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-00-4"
-       width="73.335182"
-       height="11.265493"
-       x="58.403004"
-       y="101.98206" />
+       width="102.45093"
+       height="14.354136"
+       x="79.101562"
+       y="128.45909" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.85523;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-0"
-       width="53.534904"
-       height="11.265493"
-       x="5.5550561"
-       y="-188.21051"
+       width="68.212486"
+       height="15.738152"
+       x="5.5948381"
+       y="-260.44562"
        transform="rotate(90)" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-0-0"
-       width="53.534904"
-       height="11.265493"
-       x="5.409955"
-       y="-228.2319"
-       transform="rotate(90)" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.13815;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.85523;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-0-0-6"
-       width="53.534904"
-       height="11.265493"
-       x="5.7619534"
-       y="-268.10693"
+       width="68.212486"
+       height="15.738152"
+       x="5.8584599"
+       y="-372.06274"
        transform="rotate(90)" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.62128;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.51911;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-12"
-       width="113.96539"
-       height="6.3339434"
-       x="90.969307"
-       y="-155"
+       width="145.95946"
+       height="8.8486633"
+       x="113.67863"
+       y="-214.04977"
        transform="rotate(90)" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:5.62128;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.49981;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-12-1"
-       width="113.96539"
-       height="6.3339434"
-       x="46.096386"
-       y="-12.60252"
+       width="145.21111"
+       height="8.8486633"
+       x="57.25132"
+       y="-15.11724"
        transform="rotate(90)" />
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.23126;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.97945;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-1"
-       width="114.74358"
-       height="5.4482417"
-       x="90.364426"
-       y="-148.42349"
+       width="146.20265"
+       height="7.6113181"
+       x="113.65626"
+       y="-204.86224"
        transform="rotate(90)" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
        id="Eingang"
-       width="24.486"
-       height="11.265493"
-       x="208.05687"
-       y="198.73283" />
+       width="34.2075"
+       height="14.354136"
+       x="288.17145"
+       y="251.73586" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-5-7"
-       width="24.486036"
-       height="11.265493"
-       x="180.48509"
-       y="-47.205082"
+       width="31.199333"
+       height="15.738152"
+       x="228.48517"
+       y="-63.457809"
        transform="rotate(90)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
-       x="-202.20482"
-       y="42.055794"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-268.22498"
+       y="53.733276"
        id="text6-7-5"
-       transform="rotate(-90)"><tspan
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan13-4"
-         x="-202.20482"
-         y="42.055794">KASSA</tspan></text>
+         x="-268.22498"
+         y="53.733276"
+         style="stroke-width:7.73826">KASSA</tspan></text>
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-5-7-7"
-       width="24.486036"
-       height="11.265493"
-       x="180.77686"
-       y="-82.465248"
+       width="31.199333"
+       height="15.738152"
+       x="228.85692"
+       y="-112.71707"
        transform="rotate(90)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
-       x="-202.14845"
-       y="78.067299"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-268.14978"
+       y="101.77919"
        id="text6-7-0"
-       transform="rotate(-90)"><tspan
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan13-1"
-         x="-202.14845"
-         y="78.067299">KASSA</tspan></text>
+         x="-268.14978"
+         y="101.77919"
+         style="stroke-width:7.73826">KASSA</tspan></text>
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.47494;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.6362;stroke-dasharray:none;stroke-opacity:1"
        id="rect5-5-7-9"
-       width="24.486036"
-       height="11.265493"
-       x="180.53281"
-       y="-115.63774"
+       width="31.199333"
+       height="15.738152"
+       x="228.54596"
+       y="-159.0598"
        transform="rotate(90)" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:7.28526;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:9.71986;stroke-dasharray:none;stroke-opacity:1"
        id="rect5"
-       width="107.62532"
-       height="11.265493"
-       x="20.315641"
-       y="6.1608171" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.01373;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-00"
-       width="73.335182"
-       height="11.265493"
-       x="58.663105"
-       y="148.48444" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-7"
-       width="42.460114"
-       height="11.265493"
-       x="165.86732"
-       y="94.013382" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-7-2"
-       width="42.460114"
-       height="11.265493"
-       x="165.78224"
-       y="117.82992" />
-    <path
-       d="m 185.84237,122.37075 -1.3777,3.54139 h 0.44959 l 0.41961,-1.09141 h 1.39785 l 0.42478,1.09141 h 0.45888 l -1.37304,-3.54139 z m 3.17086,0.015 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0659,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19949 -0.005,0.34107 v 2.46445 h 0.42478 v -3.5264 z m -2.97811,0.44442 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.17259 0.023,0.0724 0.0457,0.14325 0.0687,0.21239 0.0231,0.0692 0.0397,0.11733 0.0496,0.14367 l 0.39532,1.0666 h -1.11621 l 0.39998,-1.0666 c 0.0198,-0.056 0.0443,-0.13189 0.0739,-0.22738 0.0296,-0.0988 0.056,-0.1992 0.0791,-0.30127 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path13-5" />
-    <path
-       d="m 188.92848,99.218686 c -0.2239,0 -0.4261,0.0412 -0.6072,0.1235 -0.1778,0.079 -0.3361,0.176217 -0.47438,0.291457 l 0.23202,0.29145 c 0.135,-0.10536 0.26691,-0.18774 0.39533,-0.24701 0.1317,-0.0593 0.28301,-0.0889 0.45423,-0.0889 0.18438,0 0.33434,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.439767 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15464,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29659 -0.44958,0.47439 l -0.92346,0.93327 v 0.36071 h 2.33113 v -0.39533 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33888,-0.34393 0.47387,-0.49868 0.135,-0.15804 0.24054,-0.3177 0.31626,-0.47904 0.0757,-0.16133 0.11369,-0.33444 0.11369,-0.51883 0,-0.293037 -0.0958,-0.521627 -0.2868,-0.686257 -0.19097,-0.167917 -0.45106,-0.252177 -0.78032,-0.252177 z m -3.13572,0.0346 -1.37821,3.541384 h 0.44958 l 0.41961,-1.09193 h 1.39785 l 0.42478,1.09193 h 0.45941 l -1.37305,-3.541384 z m 0.19223,0.459397 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.1726 0.023,0.0724 0.0462,0.143247 0.0693,0.212387 0.0231,0.0692 0.0392,0.11681 0.0491,0.14315 l 0.39533,1.06711 h -1.11621 l 0.39997,-1.06711 c 0.0197,-0.056 0.0442,-0.13138 0.0739,-0.22686 0.0296,-0.0988 0.056,-0.199207 0.0791,-0.301277 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path12-4" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="A2"
-       width="42.460114"
-       height="11.265493"
-       x="165.42325"
-       y="153.85313" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="A1"
-       width="42.460114"
-       height="11.265493"
-       x="165.64529"
-       y="177.93164" />
-    <path
-       d="m 185.31324,181.0737 -1.3777,3.54139 h 0.44959 l 0.41961,-1.09141 h 1.39785 l 0.42478,1.09141 h 0.45888 l -1.37304,-3.54139 z m 3.17086,0.015 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0659,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19949 -0.005,0.34107 v 2.46445 h 0.42478 v -3.5264 z m -2.97811,0.44442 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.17259 0.023,0.0724 0.0457,0.14325 0.0687,0.21239 0.0231,0.0692 0.0397,0.11733 0.0496,0.14367 l 0.39532,1.0666 h -1.11621 l 0.39998,-1.0666 c 0.0198,-0.056 0.0443,-0.13189 0.0739,-0.22738 0.0296,-0.0988 0.056,-0.1992 0.0791,-0.30127 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path13" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-7-9"
-       width="42.460114"
-       height="11.265493"
-       x="234.0672"
-       y="93.631691" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5-7-2-2"
-       width="42.460114"
-       height="11.265493"
-       x="233.98212"
-       y="117.44825" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="B2"
-       width="42.460114"
-       height="11.265493"
-       x="234.15228"
-       y="153.47144" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:4.57592;stroke-dasharray:none;stroke-opacity:1"
-       id="B1"
-       width="42.460114"
-       height="11.265493"
-       x="234.37433"
-       y="177.54994" />
+       width="150.355"
+       height="14.354136"
+       x="25.892647"
+       y="6.3666797" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
-       x="211.21008"
-       y="205.79187"
-       id="text6"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="85.235474"
+       y="15.025286"
+       id="text5-7"><tspan
+         sodipodi:role="line"
+         id="tspan7">Fischbereich</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:8.02341;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-00"
+       width="102.45093"
+       height="14.354136"
+       x="79.464928"
+       y="187.71094" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7"
+       width="59.317749"
+       height="14.354136"
+       x="229.23167"
+       y="118.30564" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2"
+       width="59.317749"
+       height="14.354136"
+       x="229.11281"
+       y="148.65192" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="A2"
+       width="59.317749"
+       height="14.354136"
+       x="228.6113"
+       y="194.55156" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="231.87758"
+       y="204.5954"
+       id="text5-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         x="231.87758"
+         y="204.5954">Konserve &amp; Fertig</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="A1"
+       width="59.317749"
+       height="14.354136"
+       x="228.92149"
+       y="225.23163" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="243.08852"
+       y="234.86743"
+       id="text5-6"><tspan
+         sodipodi:role="line"
+         id="tspan14">Pasta &amp; Reis</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-9"
+       width="59.317749"
+       height="14.354136"
+       x="324.50845"
+       y="117.81931" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5-7-2-2"
+       width="59.317749"
+       height="14.354136"
+       x="324.38959"
+       y="148.1656" />
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="B2"
+       width="59.317749"
+       height="14.354136"
+       x="324.62732"
+       y="194.06522" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="345.38251"
+       y="203.74841"
+       id="text5-6-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         x="345.38251"
+         y="203.74841">Müsli</tspan></text>
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:6.10511;stroke-dasharray:none;stroke-opacity:1"
+       id="B1"
+       width="59.317749"
+       height="14.354136"
+       x="324.93753"
+       y="224.74529" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="279.41592"
+       y="273.01077"
+       id="text6"
+       transform="scale(1.0471004,0.95501822)"><tspan
          sodipodi:role="line"
          id="tspan6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:5.8;stroke-dasharray:none"
-         x="211.21008"
-         y="205.79187">Eingang</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:7.73826;stroke-dasharray:none"
+         x="279.41592"
+         y="273.01077">Eingang</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.8;stroke-dasharray:none;stroke-opacity:1"
-       x="-201.63394"
-       y="111.86301"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.58938px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.73826;stroke-dasharray:none;stroke-opacity:1"
+       x="-267.46335"
+       y="146.86882"
        id="text6-7"
-       transform="rotate(-90)"><tspan
+       transform="matrix(0,-0.95501822,1.0471004,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan13"
-         x="-201.63394"
-         y="111.86301">KASSA</tspan></text>
-    <path
-       d="m 188.39935,157.92163 c -0.2239,0 -0.4261,0.0412 -0.6072,0.1235 -0.1778,0.079 -0.3361,0.17622 -0.47438,0.29146 l 0.23202,0.29145 c 0.135,-0.10536 0.26691,-0.18774 0.39533,-0.24701 0.1317,-0.0593 0.28301,-0.0889 0.45423,-0.0889 0.18438,0 0.33434,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.43977 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15464,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29659 -0.44958,0.47439 l -0.92346,0.93327 v 0.36071 h 2.33113 v -0.39533 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33888,-0.34393 0.47387,-0.49868 0.135,-0.15804 0.24054,-0.3177 0.31626,-0.47904 0.0757,-0.16133 0.11369,-0.33444 0.11369,-0.51883 0,-0.29304 -0.0958,-0.52163 -0.2868,-0.68626 -0.19097,-0.16792 -0.45106,-0.25218 -0.78032,-0.25218 z m -3.13572,0.0346 -1.37821,3.54139 h 0.44958 l 0.41961,-1.09193 h 1.39785 l 0.42478,1.09193 h 0.45941 l -1.37305,-3.54139 z m 0.19223,0.4594 c 0.0132,0.0395 0.0299,0.0969 0.0496,0.1726 0.023,0.0724 0.0462,0.14325 0.0693,0.21239 0.0231,0.0692 0.0392,0.11681 0.0491,0.14315 l 0.39533,1.06711 h -1.11621 l 0.39997,-1.06711 c 0.0197,-0.056 0.0442,-0.13138 0.0739,-0.22686 0.0296,-0.0988 0.056,-0.19921 0.0791,-0.30128 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path12" />
-    <path
-       d="m 253.47083,180.85873 v 3.5264 h 1.23972 c 0.37865,0 0.67669,-0.0875 0.894,-0.262 0.22061,-0.17451 0.33073,-0.42166 0.33073,-0.74104 0,-0.18438 -0.0347,-0.33382 -0.10387,-0.44907 -0.0691,-0.11527 -0.16446,-0.20412 -0.28628,-0.26665 -0.11854,-0.0625 -0.25181,-0.10561 -0.39998,-0.12867 v -0.0248 c 0.21731,-0.0395 0.38344,-0.12649 0.49868,-0.26148 0.11524,-0.1383 0.17311,-0.3114 0.17311,-0.51883 0,-0.32268 -0.11387,-0.54804 -0.34106,-0.67645 -0.22389,-0.1317 -0.55614,-0.1974 -0.99736,-0.1974 z m 4.12378,0 -0.95291,0.74052 0.22686,0.29146 0.37569,-0.30593 c 0.0658,-0.056 0.11998,-0.10229 0.16278,-0.13849 0.0428,-0.0362 0.0905,-0.0807 0.14314,-0.13333 -0.007,0.0922 -0.0111,0.18105 -0.0145,0.26665 -0.003,0.0856 -0.005,0.19897 -0.005,0.34055 v 2.46497 h 0.42478 v -3.5264 z m -3.67936,0.38034 h 0.58291 c 0.29963,0 0.51665,0.0426 0.65164,0.12815 0.13829,0.0823 0.20774,0.22071 0.20774,0.41497 0,0.19097 -0.056,0.33581 -0.16795,0.43459 -0.11195,0.0955 -0.31926,0.14315 -0.62218,0.14315 h -0.65216 z m 0,1.49138 h 0.67645 c 0.32596,0 0.55184,0.0574 0.67696,0.1726 0.1284,0.11194 0.19223,0.26055 0.19223,0.44493 0,0.19756 -0.0606,0.35722 -0.18242,0.47904 -0.12182,0.12183 -0.33935,0.18242 -0.65215,0.18242 h -0.71107 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path11" />
-    <path
-       d="m 257.50986,157.69167 c -0.22389,0 -0.4261,0.0412 -0.60719,0.1235 -0.1778,0.079 -0.3361,0.17621 -0.47439,0.29146 l 0.23254,0.29145 c 0.135,-0.10536 0.2664,-0.18774 0.39481,-0.24701 0.1317,-0.0593 0.28302,-0.0889 0.45423,-0.0889 0.18439,0 0.33435,0.0509 0.44959,0.15296 0.11524,0.0988 0.17311,0.24551 0.17311,0.43977 0,0.15804 -0.0315,0.30425 -0.0941,0.43925 -0.0626,0.1317 -0.15465,0.26685 -0.27647,0.40514 -0.12182,0.13829 -0.27178,0.29607 -0.44958,0.47387 l -0.92346,0.93379 v 0.36019 h 2.33113 v -0.39481 h -1.78284 v -0.0196 l 0.73587,-0.72605 c 0.18109,-0.1778 0.33887,-0.34444 0.47387,-0.49919 0.135,-0.15804 0.24053,-0.3177 0.31626,-0.47904 0.0757,-0.16134 0.11369,-0.33393 0.11369,-0.51832 0,-0.29304 -0.0958,-0.52215 -0.2868,-0.68678 -0.19098,-0.16792 -0.45106,-0.25166 -0.78032,-0.25166 z m -4.08915,0.0496 v 3.52588 h 1.23971 c 0.37866,0 0.6767,-0.087 0.89401,-0.26148 0.2206,-0.17451 0.33073,-0.42166 0.33073,-0.74104 0,-0.18439 -0.0347,-0.33383 -0.10387,-0.44907 -0.0691,-0.11527 -0.16446,-0.20412 -0.28629,-0.26665 -0.11853,-0.0625 -0.25181,-0.10561 -0.39998,-0.12868 v -0.0248 c 0.21731,-0.0395 0.38344,-0.12648 0.49868,-0.26148 0.11525,-0.13829 0.17312,-0.3114 0.17312,-0.51884 0,-0.32267 -0.11387,-0.54803 -0.34107,-0.67644 -0.22389,-0.1317 -0.55615,-0.1974 -0.99735,-0.1974 z m 0.44441,0.37982 h 0.58291 c 0.29963,0 0.51716,0.0431 0.65216,0.12867 0.13829,0.0823 0.20722,0.2207 0.20722,0.41496 0,0.19098 -0.056,0.33583 -0.16794,0.4346 -0.11196,0.0955 -0.31928,0.14315 -0.62219,0.14315 h -0.65216 z m 0,1.4919 h 0.67697 c 0.32596,0 0.55132,0.0574 0.67644,0.1726 0.12841,0.11194 0.19275,0.26003 0.19275,0.44441 0,0.19756 -0.0611,0.35722 -0.18293,0.47904 -0.12183,0.12183 -0.33936,0.18294 -0.65216,0.18294 h -0.71107 z"
-       style="-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:5.8"
-       id="path10" />
+         x="-267.46335"
+         y="146.86882"
+         style="stroke-width:7.73826">KASSA</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_3_Kreuzung"
+       cx="308.2355"
+       cy="91.601067"
+       rx="4.0596695"
+       ry="4.0729275" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_1_Eingang"
+       cx="308.33044"
+       cy="217.5905"
+       rx="4.0599999"
+       ry="4.0729275" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="339.60349"
+       y="233.60953"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:5.8;fill:#ffffff;fill-opacity:1"
+         x="339.60349"
+         y="233.60953">Teigwaren</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-148.96318"
+       y="12.677577"
+       id="text5-7-9-6"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="-148.96318"
+         y="12.677577">Backwaren</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="125.48849"
+       y="137.65468"
+       id="text5-7-9-60"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="125.48849"
+         y="137.65468">Obst</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="123.46423"
+       y="197.46927"
+       id="text5-7-9-60-6"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="123.46423"
+         y="197.46927">Saucen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-64.059303"
+       y="254.76682"
+       id="text5-7-9-60-5-3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         x="-64.059303"
+         y="254.76682">Tiefkühlprodukte</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="-57.371201"
+       y="366.18323"
+       id="text5-7-9-60-5-3-5"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         x="-57.371201"
+         y="366.18323">Kaltgetränke</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="238.83189"
+       y="127.64602"
+       id="text5-6-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         x="238.83189"
+         y="127.64602">Tiernahrung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="245.78267"
+       y="157.91806"
+       id="text5-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         x="245.78267"
+         y="157.91806">Snacks</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="340.1655"
+       y="126.79903"
+       id="text5-6-9-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="340.1655"
+         y="126.79903">Spielzeuge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:5.80001"
+       x="337.80734"
+       y="156.28598"
+       id="text5-4"><tspan
+         sodipodi:role="line"
+         id="tspan21"
+         x="337.80734"
+         y="156.28598">Süßigkeiten</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:7.73827"
+       id="Knotenpunkt_11_Ende"
+       cx="41.657173"
+       cy="193.79018"
+       rx="4.0597482"
+       ry="4.0729275" />
   </g>
 </svg>
+
 
 
    <script>
@@ -479,11 +733,33 @@
             const zielX2 = parseFloat(obenLinks.getAttribute("x")) + parseFloat(obenLinks.getAttribute("width")) / 2;
             const zielY2 = parseFloat(obenLinks.getAttribute("y")) + parseFloat(obenLinks.getAttribute("height")) / 2;
 
-            
+            // SVG - Element Knotenpunkt holen
+            const knotenpunktKreuzung = document.getElementById("Knotenpunkt_3_Kreuzung");
 
-            // Zwischenpunkt (Mitte)
-            const mitteX = 220;
-            const mitteY = 80;
+            // X und Y Position des Knotens berechnen
+            const mitteX = parseFloat(knotenpunktKreuzung.getAttribute("cx"));
+            const mitteY = parseFloat(knotenpunktKreuzung.getAttribute("cy"));
+
+
+
+
+
+
+            const knotenpunkt5 = document.getElementById("Knotenpunkt_5");
+            const knotenpunkt5mitteX = parseFloat(knotenpunkt5.getAttribute("cx"));
+            const knotenpunkt5mitteY = parseFloat(knotenpunkt5.getAttribute("cy"));
+
+
+
+            const knotenpunkt10 = document.getElementById("Knotenpunkt_10");
+            const knotenpunkt10mitteX = parseFloat(knotenpunkt10.getAttribute("cx"));
+            const knotenpunkt10mitteY = parseFloat(knotenpunkt10.getAttribute("cy"));
+
+
+         
+
+            
+            
 
             // 1. SVG - Linie erstellen
             const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -492,10 +768,10 @@
             line1.setAttribute("class", "route-line");
 
             line1.setAttribute("x1", startX);      // Startpunkt X = Mitte vom Eingang
-            line1.setAttribute("y1", startY)       // Startpunkt Y = Mitte vom Eingang
+            line1.setAttribute("y1", startY);       // Startpunkt Y = Mitte vom Eingang
 
-            line1.setAttribute("x2", 220);         // Endpunkt X = fester Zwischenpunkt
-            line1.setAttribute("y2", 80);          // Endpunkt Y = fester Zwischenpunkt
+            line1.setAttribute("x2", mitteX);         // Endpunkt X = fester Zwischenpunkt
+            line1.setAttribute("y2", mitteY);          // Endpunkt Y = fester Zwischenpunkt
 
             line1.setAttribute("stroke", "#8BBFE6");      // Linie grün färben
             line1.setAttribute("stroke-width", "1.5");  // Dicke der Linie festlegen
@@ -512,8 +788,8 @@
                      // Klasse hinzufügen
                      line2.setAttribute("class", "route-line");
 
-                     line2.setAttribute("x1", 220); // Startpunkt X = Zwischenpunkt
-                     line2.setAttribute("y1", 80);  // Startpunkt Y = Zwischenpunkt
+                     line2.setAttribute("x1", mitteX); // Startpunkt X = Zwischenpunkt
+                     line2.setAttribute("y1", mitteY);  // Startpunkt Y = Zwischenpunkt
 
                      line2.setAttribute("x2", zielX) // Endpunkt X = Fleischtheke
                      line2.setAttribute("y2", zielY) // Endpunkt Y = Fleischtheke
@@ -527,40 +803,54 @@
                      routeToggle = 1;
 
             // Zustand 2 = Regal links oben
-            } else if (routeToggle === 1) {
-                     // 3. Linie  (Eingang bis Mitte)
+            } else if (routeToggle === 1) { // fertig
+                     
                      const line3 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
                      line3.setAttribute("class", "route-line");
 
-                     line3.setAttribute("x1", mitteX);   // Startpunkt X = Mitte
-                     line3.setAttribute("y1", mitteY);    // Startpunkt Y = Mitte
+                     line3.setAttribute("x1", mitteX);   
+                     line3.setAttribute("y1", mitteY);   
 
-                     line3.setAttribute("x2", zielX2);      // Endpunkt X = Oben Links
-                     line3.setAttribute("y2", zielY2);       // Endpunkt Y = Oben Links
+                     line3.setAttribute("x2", knotenpunkt5mitteX);     
+                     line3.setAttribute("y2", knotenpunkt5mitteY);       
 
                      line3.setAttribute("stroke", "#8BBFE6");
                      line3.setAttribute("stroke-width", "1.5");
   
-                     layer.appendChild(line3);     // Dritte Linie in SVG einfügen
-                     
+                     layer.appendChild(line3);     
+
+                     const line4 = document.createElementNS("http://www.w3.org/2000/svg", "line"); 
+                     line4.setAttribute("class", "route-line");
+
+                     line4.setAttribute("x1", knotenpunkt5mitteX);  
+                     line4.setAttribute("y1", knotenpunkt5mitteY);    
+
+                     line4.setAttribute("x2", zielX2);      
+                     line4.setAttribute("y2", zielY2);       
+
+                     line4.setAttribute("stroke", "#8BBFE6");
+                     line4.setAttribute("stroke-width", "1.5");
+  
+                     layer.appendChild(line4);
+         
                      letztesZielElement = obenLinks;
 
                      routeToggle = 2;
             }
 
             // Zustand 3 = Regal rechts oben
-            else if (routeToggle === 2) {
+            else if (routeToggle === 2) {  // fertig
                   // 4. Linie (Mitte bis oben rechts)
                   const line4 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
                   line4.setAttribute("class", "route-line");
 
-                  line4.setAttribute("x1", mitteX); // Startpunkt Mitte
-                  line4.setAttribute("y1", mitteY); // Startpunkt Mitte
+                  line4.setAttribute("x1", mitteX); 
+                  line4.setAttribute("y1", mitteY); 
 
-                  line4.setAttribute("x2", 262);  // Endpunkt = Oberes Regal rechts
-                  line4.setAttribute("y2", 39);  // Endpunkt = Oberes Regal rechts
+                  line4.setAttribute("x2", 257);  
+                  line4.setAttribute("y2", 37); 
 
                   line4.setAttribute("stroke", "#8BBFE6");
                   line4.setAttribute("stroke-width", "1.5");
@@ -568,11 +858,12 @@
                   layer.appendChild(line4);
 
                   letztesZielElement = obenRechts;
+                  
 
                   routeToggle = 3;
             }  
             
-            else if(routeToggle === 3) {
+            else if(routeToggle === 3) {  
                   // 5. Linie
                   const line5 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
@@ -581,8 +872,8 @@
                   line5.setAttribute("x1", mitteX);
                   line5.setAttribute("y1", mitteY);
 
-                  line5.setAttribute("x2", 135);
-                  line5.setAttribute("y2", 83);
+                  line5.setAttribute("x2", knotenpunkt5mitteX);
+                  line5.setAttribute("y2", knotenpunkt5mitteY);
 
                   line5.setAttribute("stroke", "#8BBFE6");
                   line5.setAttribute("stroke-width", "1.5");
@@ -594,41 +885,22 @@
 
                   line6.setAttribute("class", "route-line");
 
-                  line6.setAttribute("x1", 135);
-                  line6.setAttribute("y1", 83);
+                  line6.setAttribute("x1", knotenpunkt5mitteX);
+                  line6.setAttribute("y1", knotenpunkt5mitteY);
 
-                  line6.setAttribute("x2", 137);
+                  line6.setAttribute("x2", 134);
                   line6.setAttribute("y2", 129);
 
                   line6.setAttribute("stroke", "#8BBFE6");
                   line6.setAttribute("stroke-width", "1.5");
 
                   layer.appendChild(line6);
-
-                  // 7. Linie
-                  const line7 = document.createElementNS("http://www.w3.org/2000/svg", "line");
-
-                  line7.setAttribute("class", "route-line");
-
-                  line7.setAttribute("x1", 137);
-                  line7.setAttribute("y1", 129);
-
-                  line7.setAttribute("x2", 130);
-                  line7.setAttribute("y2", 130);
-
-                  line7.setAttribute("stroke", "#8BBFE6");
-                  line7.setAttribute("stroke-width", "1.5");
-
-                  layer.appendChild(line7); 
-
-                  
-                  letztesZielElement = mittelRegal;
-                  
+   
 
                   routeToggle = 4;
             }
 
-            else if(routeToggle === 4) {
+            else if(routeToggle === 4) {  
 
 
                   // 8. Linie
@@ -639,8 +911,8 @@
                   line8.setAttribute("x1", mitteX);
                   line8.setAttribute("y1", mitteY);
 
-                  line8.setAttribute("x2", 135);
-                  line8.setAttribute("y2", 83);
+                  line8.setAttribute("x2", 187);
+                  line8.setAttribute("y2", 101);
 
                   line8.setAttribute("stroke", "#8BBFE6");
                   line8.setAttribute("stroke-width", "1.5");
@@ -652,11 +924,11 @@
 
                   line9.setAttribute("class", "route-line");
 
-                  line9.setAttribute("x1", 135);
-                  line9.setAttribute("y1", 83);
+                  line9.setAttribute("x1", 187);
+                  line9.setAttribute("y1", 101);
 
-                  line9.setAttribute("x2", 136);
-                  line9.setAttribute("y2", 154);
+                  line9.setAttribute("x2", 188);
+                  line9.setAttribute("y2", 164);
 
                   line9.setAttribute("stroke", "#8BBFE6");
                   line9.setAttribute("stroke-width", "1.5");
@@ -668,11 +940,11 @@
 
                   line10.setAttribute("class", "route-line");
 
-                  line10.setAttribute("x1", 136);
-                  line10.setAttribute("y1", 154);
+                  line10.setAttribute("x1", 188);
+                  line10.setAttribute("y1", 164);
 
-                  line10.setAttribute("x2", 129);
-                  line10.setAttribute("y2", 153);
+                  line10.setAttribute("x2", 178);
+                  line10.setAttribute("y2", 164);
 
                   line10.setAttribute("stroke", "#8BBFE6");
                   line10.setAttribute("stroke-width", "1.5");
@@ -694,8 +966,8 @@
                   line11.setAttribute("x1", mitteX);
                   line11.setAttribute("y1", mitteY);
 
-                  line11.setAttribute("x2", 10);
-                  line11.setAttribute("y2", 95);
+                  line11.setAttribute("x2", knotenpunkt5mitteX);
+                  line11.setAttribute("y2", knotenpunkt5mitteY);
 
                   line11.setAttribute("stroke", "#8BBFE6");
                   line11.setAttribute("stroke-width", "1.5");
@@ -705,31 +977,46 @@
 
                   letztesZielElement = linkesRegal;
 
-                  routeToggle = 6;
-            }
-
-            else if(routeToggle === 6) {
-
                   // 12. Linie
                   const line12 = document.createElementNS("http://www.w3.org/2000/svg", "line");
 
                   line12.setAttribute("class", "route-line");
 
-                  line12.setAttribute("x1", mitteX);
-                  line12.setAttribute("y1", mitteY);
+                  line12.setAttribute("x1", knotenpunkt5mitteX);
+                  line12.setAttribute("y1", knotenpunkt5mitteY);
 
-                  line12.setAttribute("x2", 262);
-                  line12.setAttribute("y2", 58);
+                  line12.setAttribute("x2", knotenpunkt10mitteX);
+                  line12.setAttribute("y2", knotenpunkt10mitteY);
 
                   line12.setAttribute("stroke", "#8BBFE6");
                   line12.setAttribute("stroke-width", "1.5");
 
                   layer.appendChild(line12);
 
+
+                  const line13 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+                  line13.setAttribute("class", "route-line");
+
+                  line13.setAttribute("x1", knotenpunkt10mitteX);
+                  line13.setAttribute("y1", knotenpunkt10mitteY);
+
+                  line13.setAttribute("x2", 13);
+                  line13.setAttribute("y2", 134);
+
+                  line13.setAttribute("stroke", "#8BBFE6");
+                  line13.setAttribute("stroke-width", "1.5");
+
+                  layer.appendChild(line13);
+
                   letztesZielElement = obenRechts;
+                  
+
 
                   routeToggle = 0;
             }
+
+            
 
             if (letztesZielElement) {
                letztesZielElement.classList.add("highlight");
@@ -770,11 +1057,85 @@
             document.getElementById('overlay').style.display = 'none';
          }
 
-// Popup beim Klick schließen (klickt man außerhalb)
-document.getElementById('overlay').addEventListener('click', closePopup);
+      // Popup beim Klick schließen (klickt man außerhalb)
+      document.getElementById('overlay').addEventListener('click', closePopup);
 
+      // Autovervollständigung
+      const produkte = [
+            "Fleisch",
+            "Fisch",
+            "Fladenbrot",
+            "Apfel",
+            "Ananas",
+            "Brot",
+            "Butter",
+            "Cola",
+            "Chips",
+            "Datteln",
+            "Donut",
+            "Eier",
+            "Eis",
+            "Gurke",
+            "Gouda-Käse",
+            "Honig",
+            "Haferflocken",
+            "Ingwer",
+            "Instandnudeln",
+            "Joghurt",
+            "Johannisbeeren",
+            "Kartoffeln",
+            "Käse",
+            "Lachs",
+            "Limonade",
+            "Milch",
+            "Marmelade",
+            "Nudeln",
+            "Nüsse",
+            "Orangen",
+            "Oliven",
+            "Pizza",
+            "Paprika",
+            "Quark",
+            "Reis",
+            "Rindfleisch",
+            "Rinderfilet",
+            "Salat",
+            "Schokolade",
+            "Tomaten",
+            "Thunfisch",
+            "Vollkornbrot",
+            "Wasser",
+            "Wurst",
+            "Yoghurt",
+            "Zucker",
+            "Zucchini",
 
-      
+         ];
+
+      const input = document.getElementById("input-produkt");
+      const suggestions = document.getElementById("vorschläge");
+
+      input.addEventListener("input", function() {
+
+      const value = input.value.toLowerCase();
+      suggestions.innerHTML = "";
+
+      produkte.forEach(produkt => {
+
+         if(produkt.toLowerCase().startsWith(value) && value !== ""){
+
+            const div = document.createElement("div");
+            div.classList.add("vorschläge");
+            div.textContent = produkt;
+
+            div.addEventListener("click", function(){
+            input.value = produkt;
+            suggestions.innerHTML = "";
+            });
+            suggestions.appendChild(div);
+           }
+         });
+      });  
 
    </script>
 
